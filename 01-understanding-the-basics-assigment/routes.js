@@ -11,7 +11,7 @@ const requestHandler = (req, res) => {
     res.write('<body>');
     res.write('<h1>Say Hello To My Little Page!</h1>');
     res.write('<form action="/create-user" method="POST">');
-    res.write('<input type="text" name="username" placeholder="Enter username..."><button type="submit">Send</button></input>');
+    res.write('<input type="text" name="username" placeholder="Enter username..."><button type="submit">Send</button>');
     res.write('</form>');
     res.write('</body>');
     res.write('</html>');
