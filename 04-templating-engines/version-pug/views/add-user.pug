@@ -1,0 +1,15 @@
+extends layouts/main-layout.pug
+
+block title 
+    title #{ pageTitle }
+
+block styles
+    link(rel="stylesheet", href="/css/users.css")
+    link(rel="stylesheet", href="/css/forms.css")
+
+block content
+    form.user-form(action="/users/add-user" method="POST")
+       .form-control
+           label(for="user") User Name
+           input(type="text" name="user" id="user")
+       button.btn(type="submit") Add User
