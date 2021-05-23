@@ -165,7 +165,7 @@ exports.deletePost = (req, res, next) => {
       }
 
       if (post.creator.toString() !== req.userId) {
-        const error = new Eerror("Not authorized");
+        const error = new Error("Not authorized");
         error.statusCode = 404;
         throw error;
       }
