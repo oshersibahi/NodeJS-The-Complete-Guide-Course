@@ -1,1 +1,1 @@
-My first Deno app, side-by-side to the same node.js app.
+My first Deno app, alongside to the same node.js app.
